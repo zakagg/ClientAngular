@@ -25,12 +25,12 @@
                             </i>
                         </button>
                     </td>
-                    <td>
+                    <td *ngIf="appStateService.authState.roles.includes('ADMIN')">
                         <button (click)="handleDeleteProduct(product)" class="btn btn-outline-danger">
                             <i class="bi bi-trash"> </i>
                         </button>
                     </td>
-                    <td>
+                    <td *ngIf="appStateService.authState.roles.includes('ADMIN')">
                         <button (click)="handleEditProduct(product)" class="btn btn-outline-success">
                             <i class="bi bi-pencil"> </i>
                         </button>

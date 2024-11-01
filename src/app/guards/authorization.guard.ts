@@ -16,7 +16,8 @@ export class AuthorizationGuard implements CanActivate {
     // Your authorization logic here, e.g., checking if the user is authenticated
    
     console.log(this.appStateService.authState.roles)
-    if (this.appStateService.authState.roles.includes("ADMIN")) {
+    console.log (route.data)
+    if ( route.data['RequiredRoles'].filter((element: any) => this.appStateService.authState.roles.includes(element)))  {
       return true;
     } else {
       this.router.navigate(['/admin/notauthorized']); // Redirect to login if not authorized

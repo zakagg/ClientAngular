@@ -8,14 +8,15 @@ import { AdminTemplateComponent } from './admin-template/admin-template.componen
 import { AuthGuard } from './guards/authentification.guard';
 import { AuthorizationGuard } from './guards/authorization.guard';
 import { NotAuthorizedComponent } from './not-authorized/not-authorized.component';
+import { RequiredValidator } from '@angular/forms';
 
 
 export const routes: Routes = [
   {path:"login",component: LoginComponent},
   {path:"admin",component: AdminTemplateComponent,canActivate:[AuthGuard],children:[
     {path:"products",component:ProductsComponent},
-    {path:"newProduct",component:NewProductComponent,canActivate:[AuthorizationGuard]},
-    {path:"editProduct/:id",component:EditProductComponent,canActivate:[AuthorizationGuard]},
+    {path:"newProduct",component:NewProductComponent,canActivate:[AuthorizationGuard],data:{RequiredRoles:['ADMIN']}},//maintenant je peux ajjouter d'autre Role
+    {path:"editProduct/:id",component:EditProductComponent,canActivate:[AuthorizationGuard],data:{RequiredRoles:['ADMIN']}},
     {path:"notauthorized",component:NotAuthorizedComponent}
   ]},
   {path:"home",component:HomeComponent}

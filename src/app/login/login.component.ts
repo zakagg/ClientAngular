@@ -36,7 +36,7 @@ export class LoginComponent {
     let  password=this.formLogin.value.password;
 
       this.autheService.login(username,password).then(resp=>{
-        console.log("je suis la")
+        //console.log("je suis la")
         return this.router.navigateByUrl("/admin")
 
           }).catch(error=>{
