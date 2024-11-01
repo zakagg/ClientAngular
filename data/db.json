@@ -1,0 +1,48 @@
+{
+  "users": [
+    {"id":"user1"
+  , "password" :"MTIzNA==",
+  "roles":["USER"],
+  "email" : "user1@example.com",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTYyMzkwMjIsInN1YiI6InVzZXIxIiwiZmlyc3RuYW1lIjoiSm9obiBEb2UiLCJuYmYiOjE1MTYyMzkwMjIsImxhc3RuYW1lIjoiQUdHT1VOIiwiZW1haWwiOiJ6YWthZ2dAbWFpbC5jb20iLCJyb2xlIjpbIlVTRVIiXX0.sleu48cD5eZzw2aMAo_ieOtcQ-qD3WczXMn1Ppdto5U"
+  },
+  {"id":"user2"
+  , "password" :"MTIzNA==",
+  "roles":["USER"],
+  "email" : "user1@example.com",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTYyMzkwMjIsInN1YiI6InVzZXIyIiwiZmlyc3RuYW1lIjoiSm9obiBEb2UiLCJuYmYiOjE1MTYyMzkwMjIsImxhc3RuYW1lIjoiQUdHT1VOIiwiZW1haWwiOiJ6YWthZ2dAbWFpbC5jb20iLCJyb2xlIjpbIlVTRVIiXX0.6keYi8r0zXTPuruHaYw1cPY14aX-bg9XS991iU2yGAI"
+  },
+  {"id":"admin"
+  , "password" :"MTIzNA==",
+  "roles":["USER","AMIN"],
+  "email" : "user1@example.com",
+  "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTYyMzkwMjIsInN1YiI6ImFkbWluIiwiZmlyc3RuYW1lIjoiSm9obiBEb2UiLCJuYmYiOjE1MTYyMzkwMjIsImxhc3RuYW1lIjoiQUdHT1VOIiwiZW1haWwiOiJ6YWthZ2dAbWFpbC5jb20iLCJyb2xlIjpbIlVTRVIiLCJBRE1JTiJdfQ.ldmqv-Z-IYF39VfNCamXBuz8ONV2g-mbffmADEsb_nM"  
+}
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "mmmmm",
+      "price": 0,
+      "checked": false
+    },
+    {
+      "id": "2",
+      "name": "mlkjhh",
+      "price": 0,
+      "checked": false
+    },
+    {
+      "id": "3",
+      "name": "Printer",
+      "price": "5400",
+      "checked": true
+    },
+    {
+      "name": "Product1",
+      "price": 0,
+      "checked": false,
+      "id": "Nkijs0E"
+    }
+  ]
+}
